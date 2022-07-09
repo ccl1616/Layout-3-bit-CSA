@@ -1,0 +1,24 @@
+#
+project2 CNT_POLY layout
+I1
+I36
+#
+project2 VIA layout
+I2
+I46
+I45
+I43
+I42
+I9
+I5
+I8
+I6
+I7
+I4
+#
+project2 MUX21 layout
+I35
+#
+project2 FA layout
+I40
+I41

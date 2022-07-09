@@ -1,0 +1,12 @@
+.subckt MUX21 in1 in2 ctrl out VDD GND
+$inv
+mp1 s_bar ctrl VDD VDD P_18 w=0.47u l=0.18u
+mn1 s_bar ctrl GND GND N_18 w=0.47u l=0.18u
+
+$TG
+mp2 out s_bar in2 VDD P_18 w=0.47u l=0.18u
+mp3 out ctrl in1 VDD P_18 w=0.47u l=0.18u
+mn2 out ctrl in2 GND N_18 w=0.47u l=0.18u
+mn3 out s_bar in1 GND N_18 w=0.47u l=0.18u
+
+.ends

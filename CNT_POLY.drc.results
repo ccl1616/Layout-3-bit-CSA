@@ -1,0 +1,11 @@
+CNT_POLY 1000
+ME1.A1
+1 1 2 Dec 20 17:48:16 2021                     
+Rule File Pathname: /users/course/2021F/vlsi14000000/u108042019/layout/__CIC18_Calibre_DRC.drc__
+Minimum area of ME1 region 0.2025 sq.um2
+p 1 4
+CN CNT_POLY c 1 0 0 1 0 0 0
+-150 280
+650 280
+650 510
+-150 510

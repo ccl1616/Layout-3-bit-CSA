@@ -1,0 +1,21 @@
+INV 1000
+NIMP.S7
+1 1 2 Dec 19 15:08:22 2021                     
+Rule File Pathname: /users/course/2021F/vlsi14000000/u108042019/layout/__CIC18_Calibre_DRC.drc__
+Maximum N+ diffusion to the nearest P+ pick-up spacing (inside P-Well or Twell) is 20um (I/O, RAM, ROM, capacitor and diode are excepted)
+p 1 4
+CN INV c 1 0 0 1 0 0 0
+770 220
+1930 220
+1930 690
+770 690
+PIMP.S7
+1 1 2 Dec 19 15:08:22 2021                     
+Rule File Pathname: /users/course/2021F/vlsi14000000/u108042019/layout/__CIC18_Calibre_DRC.drc__
+Maximum P+ diffusion to nearest N+ pick-up spacing (inside N-Well) is 20um (I/O, RAM, ROM, capacitor and diode are expected)
+p 1 4
+CN INV c 1 0 0 1 0 0 0
+770 1660
+1930 1660
+1930 2130
+770 2130

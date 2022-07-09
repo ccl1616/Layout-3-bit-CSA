@@ -1,0 +1,85 @@
+
+********************************************************************************
+Product   : Virtuoso(R) STREAM Out
+Program   : @(#)$CDS: pipo.exe version 5.1.0 11/22/2011 01:41 (cicln04) $
+SubVersion: sub-version 5.10.41.500.6.151
+Started at: 21-Dec-2021  23:10:59
+User Name : u108042019
+Host Name : ic28.cs.nthu.edu.tw
+Directory : /users/course/2021F/vlsi14000000/u108042019/layout
+CADENCE Design Systems, Inc.
+********************************************************************************
+
+     1. translating cellview (CNT layout)
+     2. translating cellview (CNT_POLY layout)
+     3. translating cellview (CNT_DIF layout)
+     4. translating cellview (p_pickup layout)
+     5. translating cellview (MUX21 layout)
+
+			Individual Cell Statistics
+
+CellView          Rectangles Polygons   Paths Ellipses Labels Instances Arrays  Nodes
+*************************************************************************************
+CNT/layout                 1        0       0       0       0       0       0      0
+CNT_POLY/layout            1        0       0       0       0       1       0      0
+CNT_DIF/layout             2        0       0       0       0       0       0      0
+p_pickup/layout            2        0       0       0       0       1       0      0
+MUX21/layout              30        0       0       0       6      17       0      0
+
+
+                    Statistics Of Layers
+
+
+Cadence    Cadence    Stream   Stream
+ Layer     Purpose    Layer   Datatype Rectangles Polygons Paths  Ellipses  Labels   Nodes
+-------------------------------------------------------------------------------------------
+DIFF       drawing    1         0         5        0        0        0        0        0       
+PIMP       drawing    11        0         2        0        0        0        0        0       
+M1_TEXT    drawing    101       0         0        0        0        0        6        0       
+PO1        drawing    41        0         13       0        0        0        0        0       
+ME1        drawing    46        0         11       0        0        0        0        0       
+NIMP       drawing    12        0         2        0        0        0        0        0       
+NW         drawing    3         0         1        0        0        0        0        0       
+CONT       drawing    39        0         2        0        0        0        0        0       
+
+
+   Summary Of Objects
+
+------------------------
+      36 Rectangles
+       0 Polygons
+       0 Paths
+       0 Ellipses
+       6 Labels
+      19 Instances
+       0 Arrays
+       5 Cells
+       0 Nodes
+
+
+00:00:00 Elapsed time
+00:00:00 CPU time
+
+    2439 Kbytes of memory
+
+*** There were no error or warning message ***
+
+The setup file's contents :
+
+streamOutKeys = list(nil
+	'userSkillFile             ""
+	'layerTable                ""
+	'convertPin                "geometry"
+	'libVersion                "5.0"
+	'units                     "micron"
+	'scale                     0.001
+	'cellMapTable              ""
+	'caseSensitivity           "preserve"
+	'summaryFile               "PIPO.SUM.MUX21"
+	'errFile                   "PIPO.LOG.MUX21"
+	'outFile                   "/users/course/2021F/vlsi14000000/u108042019/layout/MUX21.calibre.db"
+	'viewName                  "layout"
+	'primaryCell               "MUX21"
+	'libName                   "project2"
+	'runDir                    "/users/course/2021F/vlsi14000000/u108042019/layout/"
+)

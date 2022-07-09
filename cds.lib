@@ -1,0 +1,6 @@
+-- File Created by  at Sun Dec 19 11:47:22 2021
+-- assisted by CdsLibEditor
+INCLUDE /tools/linux/cadence/IC/IC51.41.151/share/cdssetup/cds.lib
+DEFINE project1 /users/course/2021F/vlsi14000000/u108042019/layout/project1
+DEFINE project2 project2
+DEFINE VLSI_LIB VLSI_LIB

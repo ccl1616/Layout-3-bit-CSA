@@ -1,0 +1,76 @@
+
+********************************************************************************
+Product   : Virtuoso(R) STREAM Out
+Program   : @(#)$CDS: pipo.exe version 5.1.0 11/22/2011 01:41 (cicln04) $
+SubVersion: sub-version 5.10.41.500.6.151
+Started at: 20-Dec-2021  01:13:38
+User Name : u108042019
+Host Name : ic30.cs.nthu.edu.tw
+Directory : /users/course/2021F/vlsi14000000/u108042019/layout
+CADENCE Design Systems, Inc.
+********************************************************************************
+
+     1. translating cellview (CNT_DIF layout)
+     2. translating cellview (nwell_pickup layout)
+
+			Individual Cell Statistics
+
+CellView          Rectangles Polygons   Paths Ellipses Labels Instances Arrays  Nodes
+*************************************************************************************
+CNT_DIF/layout             2        0       0       0       0       0       0      0
+nwell_pickup/layout        3        0       0       0       0       1       0      0
+
+
+                    Statistics Of Layers
+
+
+Cadence    Cadence    Stream   Stream
+ Layer     Purpose    Layer   Datatype Rectangles Polygons Paths  Ellipses  Labels   Nodes
+-------------------------------------------------------------------------------------------
+DIFF       drawing    1         0         1        0        0        0        0        0       
+ME1        drawing    46        0         1        0        0        0        0        0       
+NIMP       drawing    12        0         1        0        0        0        0        0       
+NW         drawing    3         0         1        0        0        0        0        0       
+CONT       drawing    39        0         1        0        0        0        0        0       
+
+
+   Summary Of Objects
+
+------------------------
+       5 Rectangles
+       0 Polygons
+       0 Paths
+       0 Ellipses
+       0 Labels
+       1 Instances
+       0 Arrays
+       2 Cells
+       0 Nodes
+
+
+00:00:00 Elapsed time
+00:00:00 CPU time
+
+    2391 Kbytes of memory
+
+*** There were no error or warning message ***
+
+The setup file's contents :
+
+streamOutKeys = list(nil
+	'userSkillFile             ""
+	'layerTable                ""
+	'convertPin                "geometry"
+	'libVersion                "5.0"
+	'units                     "micron"
+	'scale                     0.001
+	'cellMapTable              ""
+	'caseSensitivity           "preserve"
+	'summaryFile               "PIPO.SUM.nwell_pickup"
+	'errFile                   "PIPO.LOG.nwell_pickup"
+	'outFile                   "/users/course/2021F/vlsi14000000/u108042019/layout/nwell_pickup.calibre.db"
+	'viewName                  "layout"
+	'primaryCell               "nwell_pickup"
+	'libName                   "project2"
+	'runDir                    "/users/course/2021F/vlsi14000000/u108042019/layout/"
+)

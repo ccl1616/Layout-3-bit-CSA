@@ -1,0 +1,14 @@
+.subckt aoi21_ver2 in1 in2 in3 out vdd gnd
+mpinv inv nand vdd vdd P_18 w=0.47u l=0.18u
+mninv inv nand gnd gnd N_18 w=0.47u l=0.18u
+
+mpnand nand in1 vdd vdd P_18 w=0.47u l=0.18u
+mpnandr nand in2 vdd vdd P_18 w=0.47u l=0.18u
+mnnand x in1 gnd gnd N_18 w=0.47u l=0.18u
+mnnandr nand in2 x gnd N_18 w=0.47u l=0.18u
+
+mpnor k inv vdd vdd P_18 w=0.47u l=0.18u
+mpnorr out in3 k vdd P_18 w=0.47u l=0.18u
+mnnor out inv gnd gnd N_18 w=0.47u l=0.18u
+mnnorr out in3 gnd gnd N_18 w=0.47u l=0.18u
+.ends

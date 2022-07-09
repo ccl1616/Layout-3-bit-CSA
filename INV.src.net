@@ -1,0 +1,4 @@
+.subckt INV inv_in inv_out vdd gnd
+mp inv_out inv_in vdd vdd P_18 w=0.47u l=0.18u
+mn inv_out inv_in gnd gnd N_18 w=0.47u l=0.18u
+.ends

@@ -1,0 +1,72 @@
+.subckt ADDER3 A0 A1 A2 B0 B1 B2 CIN S0 S1 S2 COUT VDD GND
+x_fa0_in0 A0 B0 GND SUM0 COUT0 VDD GND FA
+x_fa0_in1 A0 B0 VDD SUM0_b COUT0_b VDD GND FA
+x_fa1_in0 A1 B1 COUT0 SUM1 COUT1 VDD GND FA
+x_fa1_in1 A1 B1 COUT0_b SUM1_b COUT1_b VDD GND FA
+x_fa2_in0 A2 B2 COUT1 SUM2 COUT2 VDD GND FA
+x_fa2_in1 A2 B2 COUT1_b SUM2_b COUT2_b VDD GND FA
+x_mux0 SUM0 SUM0_b CIN S0 VDD GND MUX21
+x_mux1 SUM1 SUM1_b CIN S1 VDD GND MUX21 
+x_mux2 SUM2 SUM2_b CIN S2 VDD GND MUX21
+x_mux3 COUT2 COUT2_b CIN COUT VDD GND MUX21
+.ends
+
+$ ========================================Y
+.subckt MUX21 in1 in2 ctrl out VDD GND
+$inv
+mp1 s_bar ctrl VDD VDD P_18 w=0.47u l=0.18u
+mn1 s_bar ctrl GND GND N_18 w=0.47u l=0.18u
+
+$TG
+mp2 out s_bar in2 VDD P_18 w=0.47u l=0.18u
+mp3 out ctrl in1 VDD P_18 w=0.47u l=0.18u
+mn2 out ctrl in2 GND N_18 w=0.47u l=0.18u
+mn3 out s_bar in1 GND N_18 w=0.47u l=0.18u
+
+.ends
+$ ========================================Y
+.subckt FA a b c_in sum c_out VDD GND
+$cout_ p
+mp1_1 p01 a VDD VDD P_18 w=0.47u l=0.18u
+mp1_2 p01 b VDD VDD P_18 w=0.47u l=0.18u
+mp1_3 cout_ c_in p01 VDD P_18 w=0.47u l=0.18u
+
+mp2_1 p02 a VDD VDD P_18 w=0.47u l=0.18u
+mp2_2 cout_ b p02 VDD P_18 w=0.47u l=0.18u
+
+$cout_ n
+mn1_1 cout_ c_in n01 GND N_18 w=0.47u l=0.18u
+mn1_2 n01 a GND GND N_18 w=0.47u l=0.18u
+mn1_3 n01 b GND GND N_18 w=0.47u l=0.18u
+
+mn2_1 cout_ b n02 GND N_18 w=0.47u l=0.18u
+mn2_2 n02 a GND GND N_18 w=0.47u l=0.18u
+
+$s_ p
+mp3_1 p03 a VDD VDD P_18 w=0.47u l=0.18u
+mp3_2 p03 b VDD VDD P_18 w=0.47u l=0.18u
+mp3_3 p03 c_in VDD VDD P_18 w=0.47u l=0.18u
+mp3_4 s_ cout_ p03 VDD P_18 w=0.47u l=0.18u
+
+mp4_1 p04 a VDD VDD P_18 w=0.47u l=0.18u
+mp4_2 p05 b p04 VDD P_18 w=0.47u l=0.18u
+mp4_3 s_ c_in p05 VDD P_18 w=0.47u l=0.18u
+
+$s_ n
+mn3_1 s_ cout_ n03 GND N_18 w=0.47u l=0.18u
+mn3_2 n03 a GND GND N_18 w=0.47u l=0.18u
+mn3_3 n03 b GND GND N_18 w=0.47u l=0.18u
+mn3_4 n03 c_in GND GND N_18 w=0.47u l=0.18u
+
+mn4_1 s_ c_in n05 GND N_18 w=0.47u l=0.18u
+mn4_2 n05 b n04 GND N_18 w=0.47u l=0.18u
+mn4_3 n04 a GND GND N_18 w=0.47u l=0.18u
+
+x_s_inv s_ sum VDD GND INV
+x_p_inv cout_ c_out VDD GND INV
+.ends
+
+.subckt INV inv_in inv_out vdd gnd
+mp inv_out inv_in vdd vdd P_18 w=0.47u l=0.18u
+mn inv_out inv_in gnd gnd N_18 w=0.47u l=0.18u
+.ends

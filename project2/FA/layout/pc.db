@@ -1,0 +1,28 @@
+#
+project2 CNT_POLY layout
+I13
+I14
+I15
+#
+project2 VIA layout
+I7
+I8
+I9
+I10
+I11
+#
+project2 INV layout
+I5
+I6
+#
+project2 CNT layout
+I4
+I12
+#
+project2 MA_MOS layout
+I1
+I3F
+#
+project2 CNT_DIF layout
+I2
+I3

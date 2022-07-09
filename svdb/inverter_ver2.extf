@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1635519766 1635519767
+lvs_ExtOutFile RUNDIR /users/course/2021F/vlsi14000000/u108042019/layout
+lvs_ExtOutFile RULES_FILE /users/course/2021F/vlsi14000000/u108042019/layout/_CIC18_Calibre_LVS.lvs_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /users/course/2021F/vlsi14000000/u108042019/layout/inverter_ver2.sp
+lvs_ExtOutFile EXTRACTION_REPORT inverter_ver2.lvs.report.ext

@@ -1,0 +1,59 @@
+MA_MOS 1000
+NIMP.S7
+4 4 2 Dec 21 14:28:02 2021                     
+Rule File Pathname: /users/course/2021F/vlsi14000000/u108042019/layout/__CIC18_Calibre_DRC.drc__
+Maximum N+ diffusion to the nearest P+ pick-up spacing (inside P-Well or Twell) is 20um (I/O, RAM, ROM, capacitor and diode are excepted)
+p 1 8
+CN MA_MOS c 1 0 0 1 0 0 0
+260 1700
+850 1700
+850 20
+1320 20
+1320 3870
+850 3870
+850 2170
+260 2170
+p 2 4
+1620 20
+2090 20
+2090 3080
+1620 3080
+p 3 4
+2410 20
+2880 20
+2880 2170
+2410 2170
+p 4 4
+3190 20
+3660 20
+3660 3080
+3190 3080
+NIMP.ERR
+4 4 2 Dec 21 14:28:02 2021                     
+Rule File Pathname: /users/course/2021F/vlsi14000000/u108042019/layout/__CIC18_Calibre_DRC.drc__
+Active not covered by implant when NPLUS is a draw layer
+p 1 8
+CN MA_MOS c 1 0 0 1 0 0 0
+260 1700
+850 1700
+850 20
+1320 20
+1320 3870
+850 3870
+850 2170
+260 2170
+p 2 4
+1620 20
+2090 20
+2090 3080
+1620 3080
+p 3 4
+2410 20
+2880 20
+2880 2170
+2410 2170
+p 4 4
+3190 20
+3660 20
+3660 3080
+3190 3080

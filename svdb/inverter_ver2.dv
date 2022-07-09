@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/inverter_ver2.dv
+dv_start matched                                  
+dv_cell {inverter_ver2} {aoi21} matched
+dv_obj_count -transformed_nets {4 4} -transformed_inst {1 1} -transformed_port {4 4}
+dv_end
