@@ -14,4 +14,4 @@ This is my layout 3-bit CSA project, design transistor level schematic and layou
     ![](https://i.imgur.com/N33vbUU.png)
     3. Design a 3-bit carry select adder, ADDER3; reuse MUX21 and FA in this design.
     ![](https://i.imgur.com/r9DwYHf.jpg)
-- Note: For more details, please refer to [project_report2.pdf](https://)
+- Note: For more details, please refer to [project_report2.pdf](https://github.com/ccl1616/Layout-3-bit-CSA/blob/main/project_report2.pdf)
